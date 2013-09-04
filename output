@@ -1,0 +1,69 @@
+GaussianNB()
+TRAINING
+========
+Loading 20 newsgroups dataset for categories:
+['alt.atheism', 'comp.graphics', 'rec.sport.hockey', 'sci.electronics']
+Reading files and undergoing stemming.
+Tokens extracted.
+tfidf value from train set is calculated.
+Centroids of each categories have been calculated.
+TESTING
+========
+Loading 20 newsgroups dataset for categories:
+['alt.atheism', 'comp.graphics', 'rec.sport.hockey', 'sci.electronics']
+Reading files and undergoing stemming.
+Tokens extracted.
+tfidf value from test set is calculated.
+Predicted category of each files
+EVALUATION
+==========
+f1_score
+0.875465721268
+classification report:
+                  precision    recall  f1-score   support
+
+     alt.atheism       0.95      0.96      0.95       314
+   comp.graphics       0.79      0.80      0.80       386
+rec.sport.hockey       0.97      0.92      0.95       422
+ sci.electronics       0.80      0.83      0.81       378
+
+     avg / total       0.88      0.87      0.88      1500
+
+confusion matrix:
+[[302   6   2   4]
+ [  5 309   7  65]
+ [  4  19 388  11]
+ [  8  55   2 313]]
+GaussianNB()
+TRAINING
+========
+Loading 20 newsgroups dataset for categories:
+['alt.atheism', 'comp.graphics', 'rec.sport.hockey', 'sci.electronics']
+Centroids of each categories have been calculated using the new approach.
+TESTING
+========
+Loading 20 newsgroups dataset for categories:
+['alt.atheism', 'comp.graphics', 'rec.sport.hockey', 'sci.electronics']
+Reading files and undergoing stemming.
+Tokens extracted.
+tfidf value from test set is calculated.
+Predicted category of each files
+EVALUATION
+==========
+f1_score
+0.886942533595
+classification report:
+                  precision    recall  f1-score   support
+
+     alt.atheism       0.95      0.96      0.96       315
+   comp.graphics       0.85      0.80      0.82       410
+rec.sport.hockey       0.97      0.94      0.96       409
+ sci.electronics       0.79      0.85      0.82       366
+
+     avg / total       0.89      0.89      0.89      1500
+
+confusion matrix:
+[[303   6   2   4]
+ [  6 329   9  66]
+ [  4   8 386  11]
+ [  6  46   2 312]]
